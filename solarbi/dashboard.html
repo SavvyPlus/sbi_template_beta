@@ -32,20 +32,38 @@
 <nav class="sidenav navbar navbar-vertical  fixed-left  navbar-expand-xs navbar-light bg-white" id="sidenav-main">
     <div class="scrollbar-inner">
         <!-- Brand -->
-        <div class="sidenav-header  align-items-center">
+        <div class="sidenav-header d-flex align-items-center">
             <a class="navbar-brand" href="javascript:void(0)">
                 <img src="" class="navbar-brand-img" alt="...">
             </a>
+            <div class=" ml-auto ">
+              <!-- Sidenav toggler -->
+              <div class="sidenav-toggler d-none d-xl-block" data-action="sidenav-unpin"
+                   data-target="#sidenav-main">
+                  <div class="sidenav-toggler-inner">
+                      <i class="sidenav-toggler-line"></i>
+                      <i class="sidenav-toggler-line"></i>
+                      <i class="sidenav-toggler-line"></i>
+                  </div>
+              </div>
+            </div>
         </div>
         <div class="navbar-inner">
             <!-- Collapse -->
             <div class="collapse navbar-collapse" id="sidenav-collapse-main">
                 <!-- Workspace Selection -->
-                <select class="form-control">
-                    <option>This Team</option>
-                    <option>My Other Team</option>
-                    <option>+ New team</option>
-                </select>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                            id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                        Dropdown button
+                    </button>
+                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                        <a class="dropdown-item" href="#">Action</a>
+                        <a class="dropdown-item" href="#">Another action</a>
+                        <a class="dropdown-item" href="#">Something else here</a>
+                    </div>
+                </div>
 
 
                 <!-- Divider -->
