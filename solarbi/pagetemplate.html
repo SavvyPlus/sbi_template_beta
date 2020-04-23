@@ -14,12 +14,9 @@
     <!-- Icons -->
     <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
     <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
-
-
     <!-- Page plugins -->
-    <link rel="stylesheet" href="../../../assets/vendor/datatables.net-bs4/css/dataTables.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../../assets/vendor/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css">
-    <link rel="stylesheet" href="../../../assets/vendor/datatables.net-select-bs4/css/select.bootstrap4.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
+    <link rel="stylesheet" href="../../assets/vendor/sweetalert2/dist/sweetalert2.min.css">
     <!-- Argon CSS -->
 
     <link rel="stylesheet" href="../assets/css/solarbi.css" type="text/css">
@@ -324,7 +321,32 @@
         </div>
     </div>
     <!-- End Header -->
+<div>
+    <!-- Notifications -->
+    <div class="card">
+        <div class="card-header">
+            <h3 class="mb-0">Notifications</h3>
+        </div>
+        <div class="card-body">
+            <button class="btn btn-default" data-toggle="notify" data-placement="top" data-align="center"
+                    data-type="default" data-icon="ni ni-bell-55">Default
+            </button>
+            <button class="btn btn-info" data-toggle="notify" data-placement="top" data-align="center"
+                    data-type="info" data-icon="ni ni-bell-55">Info
+            </button>
+            <button class="btn btn-success" data-toggle="notify" data-placement="top" data-align="center"
+                    data-type="success" data-icon="ni ni-bell-55">Success
+            </button>
+            <button class="btn btn-warning" data-toggle="notify" data-placement="top" data-align="center"
+                    data-type="warning" data-icon="ni ni-bell-55">Warning
+            </button>
+            <button class="btn btn-danger" data-toggle="notify" data-placement="top" data-align="center"
+                    data-type="danger" data-icon="ni ni-bell-55">Danger
+            </button>
+        </div>
+    </div>
 
+</div>
 
 </div>
 
@@ -342,11 +364,14 @@
 <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
 <!-- Optional JS -->
-<script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
-<script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
-<script src="assets/vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+<script src="../assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
+<script src="../assets/vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
+
 <!-- Argon JS -->
 <script src="../assets/js/argon.js?v=1.2.0"></script>
+
+<!-- Demo JS - remove this in your project -->
+<script src="../../assets/js/demo.min.js"></script>
 <!-- End Page content -->
 
 </body>
