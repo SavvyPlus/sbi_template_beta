@@ -315,7 +315,6 @@
                     <h1 class="display-2 text-white">Hello User</h1>
                     <p class="text-white mt-0 mb-5">This is your profile page. You can see the You details,
                         invite people to your team and adjust settings</p>
-
                 </div>
             </div>
         </div>
@@ -431,8 +430,47 @@
                             <div class="col">
                                 <h5 class="mb-0">Team members</h5>
                             </div>
-                            <div class="col text-right">
-                                <a class="btn btn-sm btn-primary" href="#">Send Invitation</a>
+                            <div class="col-lg-6 col-5 text-right">
+                                <a href="#" class="btn btn-sm btn-primary" data-toggle="modal" data-target="#invitemodal">Team Invitation</a>
+                                <!-- Modal -->
+                                <div class="modal fade" id="invitemodal" tabindex="-1" role="dialog" aria-labelledby="invitemodallabel" aria-hidden="true">
+                                    <div class="modal-dialog modal-dialog-centered" role="document">
+                                        <div class="modal-content">
+                                            <div class="modal-header">
+                                                <h5 class="modal-title" id="exampleModalLabel">Team Invitation</h5>
+                                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                    <span aria-hidden="true">&times;</span>
+                                                </button>
+                                            </div>
+                                            <div class="modal-body">
+                                                <div class="row py-3 align-items-center">
+                                                    <div class="col-md-12">
+                                                        <div class="form-group">
+                                                            <div class="input-group input-group-merge">
+                                                                <div class="input-group-prepend">
+                                                                    <span class="input-group-text"><i class="fas fa-envelope"></i></span>
+                                                                </div>
+                                                                <input class="form-control" placeholder="Email address" type="email">
+                                                            </div>
+                                                            <div class="row">
+                                                                <div class="col" style="padding-top: 10px">
+                                                                    <span href="#" class="btn btn-link px-0"><i class="fas fa-plus-circle"></i> Add another</span> or
+                                                                    <span class="btn btn-link px-0">add many at once</span>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+                                            </div>
+                                            <div class="modal-footer">
+                                                <button type="button" class="btn btn-secondary" data-dismiss="modal">Back</button>
+                                                <button type="button" class="btn btn-primary">Send Invitation</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
                             </div>
                         </div>
                     </div>
