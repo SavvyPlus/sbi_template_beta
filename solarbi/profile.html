@@ -335,9 +335,10 @@
                                 <div class="modal-dialog modal-dialog-centered" role="document">
                                     <div class="modal-content">
                                         <div class="modal-body">
-                                            <div class="card bg-gradient-primary">
-                                                <!-- Card body -->
-                                                <div class="card-body">
+                                            <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                <span aria-hidden="true">×</span>
+                                            </button>
+
                                                     <div class="row justify-content-between align-items-center">
                                                         <div class="col">
                                                             <img src="../assets/img/icons/cards/mastercard.png" alt="Image placeholder">
@@ -386,8 +387,7 @@
                                                             </div>
                                                             <button type="button" class="btn btn-block btn-info">Update new card</button>
                                                         </form>
-                                                    </div>
-                                                </div>
+
                                             </div>
                                         </div>
 
@@ -494,7 +494,38 @@
                                         <small>Accepted Invitation</small>
                                     </div>
                                     <div class="col-auto">
-                                        <button type="button" class="btn btn-sm btn-danger ">Remove</button>
+                                        <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#remove">Remove</button>
+                                        <!-- Modal -->
+                                        <div class="modal fade" id="remove" tabindex="-1" role="dialog" aria-labelledby="remove" aria-hidden="true">
+                                            <div class="modal-dialog modal-danger modal-dialog-centered modal-" role="document">
+                                                <div class="modal-content bg-gradient-danger">
+
+                                                    <div class="modal-header">
+
+                                                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                                                            <span aria-hidden="true">×</span>
+                                                        </button>
+                                                    </div>
+
+                                                    <div class="modal-body">
+
+                                                        <div class="py-3 text-center">
+                                                            <i class="ni ni-bell-55 ni-3x"></i>
+                                                            <h4 class="heading mt-4">You are about to remove a team member!</h4>
+                                                            <p>This cannot be undone, are you sure ?</p>
+                                                        </div>
+
+                                                    </div>
+
+                                                    <div class="modal-footer">
+                                                        <button type="button" class="btn btn-white">Yeah, I'm sure</button>
+                                                        <button type="button" class="btn btn-link text-white ml-auto" data-dismiss="modal">Oh let me think about it </button>
+                                                    </div>
+
+                                                </div>
+                                            </div>
+                                        </div>
+
                                     </div>
                                 </div>
                             </li>
