@@ -66,4 +66,10 @@
 @import 'custom/utilities';
 @import 'custom/vendors';
 
+// Material Tables
 
+
+// Import checkbox styles for the row selection variant
+@import '@material/checkbox/mdc-checkbox';
+// Import data table styles
+@import '@material/data-table/s';
