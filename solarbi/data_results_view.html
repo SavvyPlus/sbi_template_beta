@@ -15,8 +15,7 @@
     <link rel="stylesheet" href="../assets/vendor/nucleo/css/nucleo.css" type="text/css">
     <link rel="stylesheet" href="../assets/vendor/@fortawesome/fontawesome-free/css/all.min.css" type="text/css">
     <!-- Page plugins -->
-    <link rel="stylesheet" href="../../assets/vendor/animate.css/animate.min.css">
-    <link rel="stylesheet" href="../../assets/vendor/sweetalert2/dist/sweetalert2.min.css">
+
 
     <!-- Argon CSS -->
 
@@ -309,22 +308,119 @@
                         <nav aria-label="breadcrumb" class="d-none d-md-inline-block ml-md-4">
                             <ol class="breadcrumb breadcrumb-links breadcrumb-dark">
                                 <li class="breadcrumb-item"><a href="#"><i class="fas fa-home"></i></a></li>
-                                <li class="breadcrumb-item"><a href="#">Results</a></li>
-
+                                <li class="breadcrumb-item "><a href="#">Advance Request List</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Result View</li>
                             </ol>
                         </nav>
                     </div>
-
+                    <div class="col-lg-6 col-5 text-right">
+                        <button type="button" class="btn btn-md btn-neutral" data-toggle="tooltip" data-placement="top" title="Download CSV"><i class="ni ni-cloud-download-95"></i></button>
+                        <button href="#" class="btn btn-md btn-neutral">Request Business Case</button>
+                    </div>
                 </div>
-                <!-- End Breadcrumbs -->
-
             </div>
+
         </div>
     </div>
     <!-- End Header -->
-    <div>
+    <div class="container-fluid mt--6">
+        <div class="row">
+            <div class="col-xl-4">
+                <!--* Card header *-->
+                <!--* Card body *-->
+                <!--* Card init *-->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <!-- Surtitle -->
+                        <h6 class="surtitle">Solar Heat Map</h6>
+                        <!-- Title -->
+                        <h5 class="h3 mb-0"> </h5>
+                    </div>
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="chart">
+                            <!-- Chart wrapper -->
+                            <canvas id="solarline" class="chart-canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
 
 
+            <div class="col-xl-8">
+                <!--* Card header *-->
+                <!--* Card body *-->
+                <!--* Card init *-->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <!-- Surtitle -->
+
+                        <h6 class="surtitle">Solar Table</h6>
+
+
+                        <!-- Title -->
+                        <h5 class="h3 mb-0"> </h5>
+                    </div>
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="chart">
+                            <!-- Chart wrapper -->
+                            <canvas id="solarline" class="chart-canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="col-xl-6">
+                <!--* Card header *-->
+                <!--* Card body *-->
+                <!--* Card init *-->
+                <div class="card">
+                    <!-- Card header -->
+                    <div class="card-header">
+                        <!-- Surtitle -->
+                        <h6 class="surtitle">Solar Irradiation Line Chart</h6>
+                        <!-- Title -->
+                        <h5 class="h3 mb-0"> </h5>
+                    </div>
+                    <!-- Card body -->
+                    <div class="card-body">
+                        <div class="chart">
+                            <!-- Chart wrapper -->
+                            <canvas id="solarline" class="chart-canvas"></canvas>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        <div class="col-xl-6">
+            <!--* Card header *-->
+            <!--* Card body *-->
+            <!--* Card init *-->
+            <div class="card">
+                <!-- Card header -->
+                <div class="card-header">
+                    <!-- Surtitle -->
+                    <h6 class="surtitle">Solar Irradiation Column Chart</h6>
+                    <!-- Title -->
+                    <h5 class="h3 mb-0"> </h5>
+                </div>
+                <!-- Card body -->
+                <div class="card-body">
+                    <div class="chart">
+                        <!-- Chart wrapper -->
+                        <canvas id="solarline" class="chart-canvas"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
 
     </div>
 
@@ -344,18 +440,12 @@
 <script src="../assets/vendor/jquery.scrollbar/jquery.scrollbar.min.js"></script>
 <script src="../assets/vendor/jquery-scroll-lock/dist/jquery-scrollLock.min.js"></script>
 <!-- Optional JS -->
-<script src="../assets/vendor/sweetalert2/dist/sweetalert2.min.js"></script>
-<script src="../assets/vendor/bootstrap-notify/bootstrap-notify.min.js"></script>
-<script src="echarts.js"></script>
+<script src="../assets/vendor/chart.js/dist/Chart.min.js"></script>
+<script src="../assets/vendor/chart.js/dist/Chart.extension.js"></script>
+
 <!-- import vintage theme -->
-<script src="theme/macrons.js"></script>
-<script>
-    // The second parameter is the name of the theme imported
-    var chart = echarts.init(document.getElementById('main'), 'vintage');
-    chart.setOption({
-        ...
-    });
-</script>
+
+
 
 
 <!-- Argon JS -->

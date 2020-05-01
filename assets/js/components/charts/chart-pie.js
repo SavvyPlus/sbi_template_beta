@@ -22,6 +22,7 @@ var PieChart = (function () {
             return Math.round(Math.random() * 100);
         };
 
+
         var pieChart = new Chart($this, {
             type: 'pie',
             data: {

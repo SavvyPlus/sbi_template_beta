@@ -2,13 +2,13 @@
 // Bars chart
 //
 
-var BarsChart = (function () {
+const BarsChart = (function () {
 
     //
     // Variables
     //
 
-    var $chart = $('#chart-bars');
+    const $chart = $('#chart-bars');
 
 
     //
@@ -19,7 +19,7 @@ var BarsChart = (function () {
     function initChart($chart) {
 
         // Create chart
-        var ordersChart = new Chart($chart, {
+        const ordersChart = new Chart($chart, {
             type: 'bar',
             data: {
                 labels: ['Jul', 'Aug', 'Sep', 'Oct', 'Nov', 'Dec'],
